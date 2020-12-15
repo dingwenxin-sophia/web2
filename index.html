@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>蓝影分销系统</title>
+        <meta name="keywords" content="蓝影宝塔分销系统,蓝影,宝塔面板,宝塔IDC,宝塔分销">
+        <meta name="description" content="蓝影宝塔分销系统支持宝塔面板中的独立站点管理，支持在线文件、防火墙、网站监控报表、网站防篡改等插件，后台支持宝塔面板的插件安装、更新，是集宝塔面板管理、主机分销一体的解决方案">
+        <meta name="renderer" content="webkit">
+        <meta property="og:title" content='蓝影分销系统'>
+        <meta property="og:description" content="蓝影宝塔分销系统支持宝塔面板中的独立站点管理，支持在线文件、防火墙、网站监控报表、网站防篡改等插件，后台支持宝塔面板的插件安装、更新，是集宝塔面板管理、主机分销一体的解决方案">
+        <meta property="og:image" content="/logo.png">
+        <meta name="msapplication-TileImage" content="/logo.png">
+        <meta name="msapplication-TileColor" content="#4da2ef">
+        <meta name="theme-color" content="#0a8aff">
+        <link href="static/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="static/css/fastadmin.css">
+        <link rel="stylesheet" href="static/css/font-awesome.min.css">
+        <link rel="stylesheet" href="static/css/toastr.min.css">
+        <link rel="stylesheet" href="static/css/layer.css">
+        <link rel="stylesheet" href="static/css/jquery.validator.css">
+        <script src="static/js/jquery.min-1607481595.js"></script>
+    </head>
+    <body id="page-top" class="home-1" data-other="is_notice" data-auth="">
+        <section class="menu-section-area">
+            <div class="top-nav">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <ul class="left-top-menu">
+                    <li><a href="javascript:;">
+                        <script language="JavaScript">
+                            document.write("<center><font color=#990099 size=-1> ")
+                            day = new Date()
+                            hr = day.getHours()
+                            minu = day.getMinutes()
+                            s = "现在是：";
+                            s = s + hr + "点" + minu + "分。 ";
+                            if (hr == 1)
+                                document.write(s + "凌晨1点了！该休息了！")
+                            if (hr == 2)
+                                document.write(s + "工作狂，还在忙嘛？")
+                            if (hr == 3)
+                                document.write(s + "午夜3点！你决定不睡觉了嘛？？")
+                            if (hr == 4)
+                                document.write(s + "凌晨4点了，您的工作精神一定要上报党中央！")
+                            if (hr == 5)
+                                document.write(s + "5点多了，您是刚起床还是还没睡啊？")
+                            if (hr == 6)
+                                document.write(s + "早上好！新一天又开始啦！有什么打算呢？")
+                            if (hr == 7)
+                                document.write(s + "吃早饭了嘛？")
+                            if ((hr == 8) || (hr == 9) || (hr == 10))
+                                document.write(s + "祝您工作愉快！")
+                            if (hr == 11)
+                                document.write(s + "快中午啦，准备下班了嘛？")
+                            if (hr == 12)
+                                document.write(s + "中午好！你吃饭了嘛？")
+                            if ((hr == 13) || (hr == 14))
+                                document.write(s + "准备准备要上班了！")
+                            if ((hr == 15) || (hr == 16) || (hr == 17))
+                                document.write(s + "下午好！")
+                            if ((hr == 18) || (hr == 19))
+                                document.write(s + "该看新闻联播了！")
+                            if ((hr == 20) || (hr == 21) || (hr == 22))
+                                document.write(s + "休息下，找个电影看看睡觉吧？")
+                            if (hr == 23)
+                                document.write(s + "不早了，快休息吧？")
+                            if (hr == 0)
+                                document.write(s + "午夜时分，你可要注意身体呢！")
+                            document.write("</font></center>")
+                        </script>                    </a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <ul class="right-top-menu text-right">
+                                        <li><a href="">登录</a></li>
+                    <li><a href="">注册</a></li>
+                                        
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-expand-lg fixed-top d-none d-sm-none d-md-block d-lg-block d-xl-block" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href=""><img src="static/picture/logo.png" alt="AndHost" class="img-fluid" style="width: 130px;"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-capitalize ml-auto">
+                                <li class="nav-item dropdown-box">
+                    <a class="nav-link" href="" target="_self">主页</a>
+                </li>
+                                <li class="nav-item dropdown-box">
+                    <a class="nav-link" href="" target="_self">主机商城</a>
+                </li>
+                                <li class="nav-item dropdown-box">
+                    <a class="nav-link" href="" target="_self">工单</a>
+                </li>
+                            </ul>
+        </div>
+    </div>
+</nav>
+<nav class="mobile_menu hidden d-none">
+    <a href=""><img class="mobile-logo" src="static/picture/logo.png" alt="Logo"></a>
+    <ul class="nav navbar-nav navbar-right menu">
+                <li class="nav-item">
+            <a class="nav-link" href="" target="_self">主页</a>
+        </li>
+                <li class="nav-item">
+            <a class="nav-link" href="" target="_self">主机商城</a>
+        </li>
+                <li class="nav-item">
+            <a class="nav-link" href="" target="_self">工单</a>
+        </li>
+                <li><a href="">登录</a></li>
+        <li><a href="">注册</a></li>
+            </ul>
+</nav>
+        </section>
+<header id="home" class="home-banner-area position-relative">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="hero-area-wrapper position-relative">
+                    <div class="hero-area-content" id="wrapper">
+                        <h1>蓝影分销系统</h1> 
+                        <div class="hero-button-box text-center">
+                            <a href="#services" class="js-scroll-trigger theme-button text-capitalize">开始体验</a>
+                        </div>
+                    </div>
+                    <div id="scroll-bottom" class="scroll-to-bottom">
+                        <a href="#services" class="js-scroll-trigger"><span></span>继续</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="bubble slow" src="static/picture/Top_bubble.svg" id="pink-side-bubble-1" alt="b">
+    <img class="bubble" src="static/picture/Bottom_Bubble.svg" id="pink-side-bubble-2" alt="b">
+    <img class="bubble slow" src="static/picture/Bog-Blob.svg" id="blue-side-bubble-1" alt="b">
+    <div class="footer-wave"></div>
+</header>
+
+<section id="services" class="services-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title-area">
+                    <h2 class="section-heading">我们的服务<span class="d-block"></span></h2>
+                    <p class="section-subheading">我们能提供最优质的虚拟主机服务，给你最好的操作体验和极度极度安全的网站体验</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row all-service-wrapper">
+
+            <div class="col-12 col-sm-12 col-md-4">
+                <div class="single-service aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+
+                    <div class="hover-content"></div>
+                    <img src="static/picture/1.svg" alt="Server">
+                    <div class="single-service-content">
+                        <h4>宝塔主机</h4>
+                        <p>宝塔面板可以使用多个不同的运行环境，拥有成熟的生态系统，并且支持第三方扩展功能</p>
+                        <a href="javascript:;"><i class="flaticon-right-arrow"></i>查看</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4">
+                <div class="single-service aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+
+                    <div class="hover-content"></div>
+                    <img src="static/picture/2.svg" alt="Server">
+                    <div class="single-service-content">
+                        <h4>多环境</h4>
+                        <p>PHP5.3-7.4、Mysql/SQlServer、Nginx/Apache/IIS、FTP、phpMyAdmin、Redis、sg11</p>
+                        <a href="javascript:;"><i class="flaticon-right-arrow"></i>查看</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4">
+                <div class="single-service aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+
+                    <div class="hover-content"></div>
+                    <img src="static/picture/3.svg" alt="Server">
+                    <div class="single-service-content">
+                        <h4>更安全</h4>
+                        <p>防火墙（Nginx/Apche）、系统加固、网站防篡改都能有效保护网站安全</p>
+                        <a href="javascript:;"><i class="flaticon-right-arrow"></i>查看</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4">
+                <div class="single-service aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+
+                    <div class="hover-content"></div>
+                    <img src="static/picture/4.svg" alt="Server">
+                    <div class="single-service-content">
+                        <h4>更快速</h4>
+                        <p>一键部署搭建专属程序主机，小白也能轻松搭建wordpress、emlog、秒赞、代刷……</p>
+                        <a href="javascript:;"><i class="flaticon-right-arrow"></i>查看</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4">
+                <div class="single-service aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+
+                    <div class="hover-content"></div>
+                    <img src="static/picture/5.svg" alt="Server">
+                    <div class="single-service-content">
+                        <h4>更强大</h4>
+                        <p>支持日志分析、目录保护、301跳转、网站备份/下载、数据备份/下载、防盗链、在线文件管理、在线解压缩、SSL一键申请/部署等</p>
+                        <a href="javascript:;"><i class="flaticon-right-arrow"></i>查看</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4">
+                <div class="single-service aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+
+                    <div class="hover-content"></div>
+                    <img src="static/picture/6.svg" alt="Server">
+                    <div class="single-service-content">
+                        <h4>更贴心</h4>
+                        <p>每日自动执行备份网站数据及源码，提供免费木马查杀，日志切割等服务，让你无忧建站</p>
+                        <a href="javascript:;"><i class="flaticon-right-arrow"></i>查看</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="pricing" class="pricing-table-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title-area">
+                    <h2 class="section-heading">站长推荐<span class="d-block"></span></h2>
+                    <p class="section-subheading"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row all-pricing-wrapper">
+                    </div>
+    </div>
+</section>
+<section id="blog" class="all-blog-posts-area" style="background:#f5f6fa;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title-area">
+                    <h2 class="section-heading">服务与帮助 <span class="d-block"></span></h2>
+                    <p class="section-subheading">如果您在使用前、使用中遇到不能解决的问题，请工单告诉我们</p>
+                </div>
+            </div>
+        </div>
+        <div class="row all-blog-posts-wrapper">
+                    </div>
+    </div>
+
+</section>
+<section id="faq" class="faq-area">
+    <div class="dd-bubbles">
+        <img class="bubble slow" src="static/picture/Bog-Blob.svg" id="blue-side-bubble-11" alt="b">
+    </div>
+    <div class="container">
+        <div class="row faq-wrapper">
+            <div class="col-12 col-sm-12 col-md-5">
+                <div class="faq-img-box">
+                    <img src="static/picture/faq-left.svg" alt="faq">
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-7">
+                <div class="faq-questions-area">
+                    <div class="section-title-area">
+                        <h2 class="section-heading text-left">常见问题</h2>
+                    </div>
+                    <div class="panel-group" id="accordion6" role="tablist" aria-multiselectable="true">
+                                                    <!-- Single Features Box-->
+                            <div class="panel panel-default aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1200">
+                                <div class="panel-heading" role="tab" id="#problems1">
+                                    <h4 class="panel-title">
+                                        <a class="font-17" role="button" data-toggle="collapse" href="#problem1" aria-expanded="true" aria-controls="problem1">
+                                            可以退款吗？                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="problem1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#problems1">
+                                    <div class="panel-body">
+                                        <p>如果您的订单开通失败，您可以手动申请退款，如果您已经开通并在使用主机，是不允许退款的</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1200">
+                                <div class="panel-heading" role="tab" id="#problems2">
+                                    <h4 class="panel-title">
+                                        <a class="font-17" role="button" data-toggle="collapse" href="#problem2" aria-expanded="true" aria-controls="problem2">
+                                            如何管理主机？                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="problem2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#problems2">
+                                    <div class="panel-body">
+                                        <p>登录到用户中心后可以在控制台中看到您的主机管理信息，其中的登录账号密码即可管理您的主机</p>
+                                    </div>
+                                </div>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="client-logo-slider" class="client-logo-slider-area">
+    <div class="container">
+        <div class="row">
+            <div class="client-logo-slider owl-carousel">
+                <div class="item">
+                    <div class="single-client-logo-box">
+                        <a href="#" target="_blank">
+                            <figure><img src="static/picture/1.png" alt="Logo img"></figure>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="single-client-logo-box">
+                        <a href="#" target="_blank">
+                            <figure><img src="static/picture/2.png" alt="Logo img"></figure>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="single-client-logo-box">
+                        <a href="#" target="_blank">
+                            <figure><img src="static/picture/3.png" alt="Logo img"></figure>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="single-client-logo-box">
+                        <a href="#" target="_blank">
+                            <figure><img src="static/picture/4.png" alt="Logo img"></figure>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="single-client-logo-box">
+                        <a href="#" target="_blank">
+                            <figure><img src="static/picture/3.png" alt="Logo img"></figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer-area">
+    <div class="footer-wave"></div>
+    <div class="container" style="margin-top: 50px;">
+        <div class="row footer-main-content-area">
+            <div class="col-xl-3 col-lg-3 col-md-3 footer-logo">
+                <figure><a href=""><img src="static/picture/logo.png" alt="Logo" style="width: 130px;"></a></figure>
+                                <p>您可以在工作日通过电话联系<br>我们的工作时间9:00-18:00                    <a href="tel:13800138000"><i class="fas fa-phone-alt"></i>13800138000</a>
+                </p>
+                            </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 footer-widget">
+                <h4>产品</h4>
+                <ul class="footer-links-list">
+                                        <li><a href="#" target="_self">虚拟主机1</a></li>
+                                        <li><a href="#" target="_self">虚拟主机2</a></li>
+                                        <li><a href="#" target="_self">云主机</a></li>
+                                        <li><a href="#" target="_self">wordpress主机</a></li>
+                                    </ul>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 footer-widget">
+                <h4>服务支持</h4>
+                <ul class="footer-links-list">
+                                        <li><a href="17.html">技术教程</a></li>
+                                        <li><a href="15.html">网站通知</a></li>
+                                        <li><a href="16.html">帮助文档</a></li>
+                                    </ul>
+            </div>
+        </div>
+        <div class="row copyright-are">
+            <div class="col-12">
+                <div class="copyright-text text-center">
+                    <p>© Copyright &copy; 2020 <a href="">蓝影分销系统</a>
+                        <a href="javascript:;" target="_blank" rel="nofollow"></a>
+                                            </p>
+
+                    <ul class="footer-social-links d-flex justify-content-center">
+                                                <li><a href="#" target="_self">网站地图</a></li>
+                                                <li><a href="#" target="_self">服务条款</a></li>
+                                                <li><a href="#" target="_self">隐私政策</a></li>
+                                                <li><a href="#" target="_self">实名认证</a></li>
+                                                <li>
+                                                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="bubble slow" src="static/picture/Top_bubble.svg" id="pink-side-bubble-111" alt="b">
+    <img class="bubble" src="static/picture/Bottom_Bubble.svg" id="pink-side-bubble-222" alt="b">
+    <img class="bubble slow" src="static/picture/Bog-Blob.svg" id="blue-side-bubble-111" alt="b">
+</footer>
+        <a href="javascript:;" class="chat-bot-box" title="QQ交流" target="_blank"><i class="fas fa-comment-alt"></i></a>
+        <div class="top-arrow">
+            <a href="#" id="scroll" style="display: none;"><i class="fas fa-angle-up"></i></a>
+        </div>
+<script src="static/js/jquery.min-16074815951.js"></script>
+<script src="static/js/main-1607481595.js"></script>
+<script src="static/js/popper.min-1607481595.js"></script>
+<script src="static/js/bootstrap.min-1607481595.js"></script>
+<script src="static/js/owl.carousel.min-1607481595.js"></script>
+<script src="static/js/jquery.easing.min-1607481595.js"></script>
+<script src="static/js/input-field-1607481595.js"></script>
+<script src="static/js/typed.min-1607481595.js"></script>
+<script src="static/js/jquery.paroller.min-1607481595.js"></script>
+<script src="static/js/wow.min-1607481595.js"></script>
+<script src="static/js/aos-1607481595.js"></script>
+<script src="static/js/waypoints.min-1607481595.js"></script>
+<script src="static/js/jquery.counterup.min-1607481595.js"></script>
+<script src="static/js/venobox.min-1607481595.js"></script>
+<script src="static/js/custom-select-1607481595.js"></script>
+<script src="static/js/jquery.meanmenu.min-1607481595.js"></script>
+<script src="static/js/custom-1607481595.js"></script>
+<script src="static/js/require.js" data-main="/assets/js/require-frontend.js?v=1607481595">
+</script>
+    </body>
+</html>
